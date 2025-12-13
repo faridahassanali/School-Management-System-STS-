@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19CF8475-B2E8-45FA-8F39-FCC3A6765271}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>STS</RootNamespace>
+    <AssemblyName>STS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="alerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alerts.Designer.cs">
+      <DependentUpon>alerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendar.Designer.cs">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databasests1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>databasests1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newdata.Designer.cs">
+      <DependentUpon>newdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdatabuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newdatabuses.Designer.cs">
+      <DependentUpon>newdatabuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdatadriverscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newdatadriverscs.Designer.cs">
+      <DependentUpon>newdatadriverscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdatastudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newdatastudent.Designer.cs">
+      <DependentUpon>newdatastudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newdatasupervisors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newdatasupervisors.Designer.cs">
+      <DependentUpon>newdatasupervisors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="previousdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="previousdata.Designer.cs">
+      <DependentUpon>previousdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="previousdatabuses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="previousdatabuses.Designer.cs">
+      <DependentUpon>previousdatabuses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="previousdatadrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="previousdatadrivers.Designer.cs">
+      <DependentUpon>previousdatadrivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="previousdatasupervisors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="previousdatasupervisors.Designer.cs">
+      <DependentUpon>previousdatasupervisors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schedule.Designer.cs">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="scheduling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scheduling.Designer.cs">
+      <DependentUpon>scheduling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="schoolsystems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="schoolsystems.Designer.cs">
+      <DependentUpon>schoolsystems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sentalert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sentalert.Designer.cs">
+      <DependentUpon>sentalert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="students.Designer.cs">
+      <DependentUpon>students.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="alerts.resx">
+      <DependentUpon>alerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calendar.resx">
+      <DependentUpon>calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newdata.resx">
+      <DependentUpon>newdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newdatabuses.resx">
+      <DependentUpon>newdatabuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newdatadriverscs.resx">
+      <DependentUpon>newdatadriverscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newdatastudent.resx">
+      <DependentUpon>newdatastudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newdatasupervisors.resx">
+      <DependentUpon>newdatasupervisors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="previousdata.resx">
+      <DependentUpon>previousdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="previousdatabuses.resx">
+      <DependentUpon>previousdatabuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="previousdatadrivers.resx">
+      <DependentUpon>previousdatadrivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="previousdatasupervisors.resx">
+      <DependentUpon>previousdatasupervisors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="schedule.resx">
+      <DependentUpon>schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="scheduling.resx">
+      <DependentUpon>scheduling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="schoolsystems.resx">
+      <DependentUpon>schoolsystems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sentalert.resx">
+      <DependentUpon>sentalert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="students.resx">
+      <DependentUpon>students.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="databasests1DataSet.xsc">
+      <DependentUpon>databasests1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="databasests1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>databasests1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="databasests1DataSet.xss">
+      <DependentUpon>databasests1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-05 234247.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-05 2342471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-05 2342472.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-05 234300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-05 234310.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_12269453.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_122694531.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_1092135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-05-06 023238.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 03.43.19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 03.43.191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spam_12372795.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 03.59.47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 04.11.10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_122694532.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_10921351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 03.43.192.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spam_123727951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spam_123727952.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 03.59.471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 04.11.101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.43.42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.43.16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.44.10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 13.26.17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 15.17.55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 15.17.551.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 15.17.552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 15.17.553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 15.17.554.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_12591245.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_13148094.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_125912451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_131480941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_125912452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_131480942.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_125912453.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_131480943.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.45.59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.45.02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adobe Express 2024-05-06 12.44.32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_9188962.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coaching_11192030.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_10515636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_105156361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148787-OUIM4Q-690.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148787-OUIM4Q-6901.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148787-OUIM4Q-6902.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148787-OUIM4Q-6903.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\148787-OUIM4Q-6904.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
